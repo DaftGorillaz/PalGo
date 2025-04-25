@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Platform, Text, StyleSheet, View, ActivityIndicator } from 'react-native';
 import MapView, { Marker, Region } from 'react-native-maps';
+
 import * as Device from 'expo-device';
 import * as Location from 'expo-location';
 
