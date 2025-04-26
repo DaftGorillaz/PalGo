@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Platform, Image, FlatList, Dimensions, Text, StyleSheet, View, ActivityIndicator } from 'react-native';
+import { Platform, Image, FlatList, TouchableOpacity, Dimensions, Text, StyleSheet, View, ActivityIndicator } from 'react-native';
 import MapView, { Marker, Region } from 'react-native-maps';
-import PagerView from 'react-native-pager-view';
+import { router } from 'expo-router';
 
 import * as Device from 'expo-device';
 import * as Location from 'expo-location';
@@ -141,9 +141,9 @@ export default function App() {
               <Image source={{ uri: item.avatar }} style={styles.avatar} />
               <Text style={styles.pronouns}>{item.pronouns}</Text>
               <Text style={styles.name}>{item.name}</Text>
-              <View style={styles.button}>
+              <TouchableOpacity style={styles.button} onPress={()=>router.push('/palcatched')}>
                 <Text style={styles.buttonText}>Catch-up?</Text>
-              </View>
+              </TouchableOpacity>
             </View>
           )}
         />
