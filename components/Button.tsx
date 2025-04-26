@@ -1,6 +1,8 @@
 import { StyleSheet, View, Pressable, Text } from 'react-native';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
+import { router, useRouter } from 'expo-router';
+
 type Props = {
   label: string;
   theme?: 'primary';
@@ -10,13 +12,8 @@ type Props = {
 export default function Button({ label, theme, onPress }: Props) {
   if (theme === 'primary') {
     return (
-      <View
-        style={[
-          styles.buttonContainer,
-          { borderWidth: 4, borderColor: '#ffd33d', borderRadius: 18 },
-        ]}>
-        <Pressable style={[styles.button, { backgroundColor: '#fff' }]} onPress={onPress}>
-          <FontAwesome name="picture-o" size={18} color="#25292e" style={styles.buttonIcon} />
+      <View>
+        <Pressable style={[styles.button, { backgroundColor: '#D9D9D' }]} onPress={onPress}>
           <Text style={[styles.buttonLabel, { color: '#25292e' }]}>{label}</Text>
         </Pressable>
       </View>
@@ -25,7 +22,7 @@ export default function Button({ label, theme, onPress }: Props) {
 
   return (
     <View style={styles.buttonContainer}>
-      <Pressable style={styles.button} onPress={() => alert('You pressed a button.')}>
+      <Pressable style={styles.button} onPress={() => router.push('/interest')}>
         <Text style={styles.buttonLabel}>{label}</Text>
       </Pressable>
     </View>
@@ -41,19 +38,24 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     padding: 3,
   },
-  button: {
-    borderRadius: 10,
-    width: '100%',
-    height: '100%',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexDirection: 'row',
-  },
-  buttonIcon: {
-    paddingRight: 8,
-  },
+	button: {
+		alignItems: "center",
+		borderRadius: 15,
+		paddingVertical: 6,
+		marginBottom: 9,
+		marginHorizontal: 32,
+		shadowColor: "#00000040",
+		shadowOpacity: 0.3,
+		shadowOffset: {
+		    width: 0,
+		    height: 4
+		},
+		shadowRadius: 4,
+		elevation: 4,
+	},
   buttonLabel: {
-    color: '#fff',
-    fontSize: 16,
+		color: "#000000",
+		fontSize: 15,
+		fontWeight: "bold",
   },
 });

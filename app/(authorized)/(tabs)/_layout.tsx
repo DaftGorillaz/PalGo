@@ -1,4 +1,5 @@
 import { Tabs } from 'expo-router';
+import {ReactNode} from "react";
 
 import Ionicons from '@expo/vector-icons/Ionicons';
 
