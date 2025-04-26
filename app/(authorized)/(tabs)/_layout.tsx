@@ -20,20 +20,20 @@ export default function TabLayout() {
         }}
     >  
       <Tabs.Screen
-        name="index"
+        name="map"
         options={{
-          title: 'Home',
+          title: 'Find',
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons name={focused ? 'home-sharp' : 'home-outline'} color={color} size={24} />
+            <Ionicons name={focused ? 'locate-sharp' : 'locate-outline'} color={color} size={24} />
           ),
         }}
       />
       <Tabs.Screen
-        name="about"
+        name="profile"
         options={{
-          title: 'About',
+          title: 'Profile',
           tabBarIcon: ({ color, focused }) => (
-            <Ionicons name={focused ? 'information-circle' : 'information-circle-outline'} color={color} size={24}/>
+            <Ionicons name={focused ? 'person-circle' : 'person-circle-outline'} color={color} size={24}/>
           ),
         }}
       />
