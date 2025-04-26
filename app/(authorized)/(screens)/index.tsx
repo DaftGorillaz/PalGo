@@ -34,89 +34,89 @@ export default function UserPersonality() {
                 </Text>
             </View>
             <ScrollView style={styles.scrollView}>
-					<TouchableOpacity style={styles.button} onPress={()=>router.push('interest')}>
+					<TouchableOpacity style={styles.button} onPress={()=>router.push('/interest')}>
                         <Text style={styles.text6}>
                             {"INTP"}
                         </Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.button} onPress={()=>router.push('interest')}>
+                    <TouchableOpacity style={styles.button} onPress={()=>router.push('/interest')}>
                         <Text style={styles.text6}>
                             {"INTJ"}
                         </Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.button} onPress={()=>router.push('interest')}>
+                    <TouchableOpacity style={styles.button} onPress={()=>router.push('/interest')}>
                         <Text style={styles.text6}>
                             {"ENTJ"}
                         </Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.button} onPress={()=>router.push('interest')}>
+                    <TouchableOpacity style={styles.button} onPress={()=>router.push('/interest')}>
                         <Text style={styles.text6}>
                             {"ENTP"}
                         </Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.button} onPress={()=>router.push('interest')}>
+                    <TouchableOpacity style={styles.button} onPress={()=>router.push('/interest')}>
                         <Text style={styles.text6}>
                             {"INFJ"}
                         </Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.button} onPress={()=>router.push('interest')}>
+                    <TouchableOpacity style={styles.button} onPress={()=>router.push('/interest')}>
                         <Text style={styles.text6}>
                             {"INFP"}
                         </Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.button} onPress={()=>router.push('interest')}>
+                    <TouchableOpacity style={styles.button} onPress={()=>router.push('/interest')}>
                         <Text style={styles.text6}>
                             {"ENFJ"}
                         </Text>
                     </TouchableOpacity>
-					<TouchableOpacity style={styles.button} onPress={()=>router.push('interest')}>
+					<TouchableOpacity style={styles.button} onPress={()=>router.push('/interest')}>
                         <Text style={styles.text6}>
                             {"ENFP"}
                         </Text>
                     </TouchableOpacity>
-					<TouchableOpacity style={styles.button} onPress={()=>router.push('interest')}>
+					<TouchableOpacity style={styles.button} onPress={()=>router.push('/interest')}>
                         <Text style={styles.text6}>
                             {"ISTJ"}
                         </Text>
                     </TouchableOpacity>
-					<TouchableOpacity style={styles.button} onPress={()=>router.push('interest')}>
+					<TouchableOpacity style={styles.button} onPress={()=>router.push('/interest')}>
                         <Text style={styles.text6}>
                             {"ISFJ"}
                         </Text>
                     </TouchableOpacity>
-					<TouchableOpacity style={styles.button} onPress={()=>router.push('interest')}>
+					<TouchableOpacity style={styles.button} onPress={()=>router.push('/interest')}>
                         <Text style={styles.text6}>
                             {"ESTJ"}
                         </Text>
                     </TouchableOpacity>
-					<TouchableOpacity style={styles.button} onPress={()=>router.push('interest')}>
+					<TouchableOpacity style={styles.button} onPress={()=>router.push('/interest')}>
                         <Text style={styles.text6}>
                             {"ESFJ"}
                         </Text>
                     </TouchableOpacity>
-					<TouchableOpacity style={styles.button} onPress={()=>router.push('interest')}>
+					<TouchableOpacity style={styles.button} onPress={()=>router.push('/interest')}>
                         <Text style={styles.text6}>
                             {"ISTP"}
                         </Text>
                     </TouchableOpacity>
-					<TouchableOpacity style={styles.button} onPress={()=>router.push('interest')}>
+					<TouchableOpacity style={styles.button} onPress={()=>router.push('/interest')}>
                         <Text style={styles.text6}>
                             {"ISFP"}
                         </Text>
                     </TouchableOpacity>
-					<TouchableOpacity style={styles.button} onPress={()=>router.push('interest')}>
+					<TouchableOpacity style={styles.button} onPress={()=>router.push('/interest')}>
                         <Text style={styles.text6}>
                             {"ESTP"}
                         </Text>
                     </TouchableOpacity>
-					<TouchableOpacity style={styles.button} onPress={()=>router.push('interest')}>
+					<TouchableOpacity style={styles.button} onPress={()=>router.push('/interest')}>
                         <Text style={styles.text6}>
                             {"ESFP"}
                         </Text>
                     </TouchableOpacity>
                 </ScrollView>
             <View>
-                <TouchableOpacity style={styles.button2} onPress={()=>router.push('interest')}>
+                <TouchableOpacity style={styles.button2} onPress={()=>router.push('/interest')}>
                     <Text style={styles.text7}>
                         {"Next"}
                     </Text>

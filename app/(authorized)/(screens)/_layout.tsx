@@ -6,6 +6,7 @@ export default function ScreenLayout() {
         <Stack>
             <Stack.Screen name="index" options={{ headerShown: false}}/>
             <Stack.Screen name="interest"/>
+            <Stack.Screen name="profilegen"/>
         </Stack>
     )
 }

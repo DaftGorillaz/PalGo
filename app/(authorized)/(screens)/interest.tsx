@@ -1,6 +1,13 @@
-import React from "react";
-import { SafeAreaView, View, ScrollView, Text, Image, TouchableOpacity, StyleSheet, } from "react-native";
-export default (props) => {
+import React, { useState } from "react";
+import { SafeAreaView, View, ScrollView, Text, Image, TouchableOpacity, StyleSheet, TextInput} from "react-native";
+
+import { router } from "expo-router";
+
+export default function UserInterest() {
+
+    const [musician, setMusician] = useState('');
+    const [athlete, setAthlete] = useState('');
+
 	return (
 		<SafeAreaView style={styles.container}>
 			<ScrollView  style={styles.scrollView}>
@@ -9,13 +16,20 @@ export default (props) => {
 						{"What do you like?"}
 					</Text>
 					<Text style={styles.text3}>
-						{"So, you are the man of culture."}
+						{"So, you are a man of culture."}
 					</Text>
 					<View style={styles.column2}>
 						<Text style={styles.text4}>
 							{"Favorite Musician"}
 						</Text>
 						<View style={styles.box}>
+                            <TextInput
+                                value={musician}
+                                onChangeText={setMusician}
+                                autoCapitalize="none"
+                                autoCorrect={false}
+                                keyboardType="default"
+                            /> 
 						</View>
 					</View>
 					<View style={styles.column2}>
@@ -23,9 +37,16 @@ export default (props) => {
 							{"Favorite Athlete"}
 						</Text>
 						<View style={styles.box}>
+                            <TextInput
+                            value={athlete}
+                            onChangeText={setAthlete}
+                            autoCapitalize="none"
+                            autoCorrect={false}
+                            keyboardType="default"
+                            />
 						</View>
 					</View>
-					<TouchableOpacity style={styles.button} onPress={()=>alert('Pressed!')}>
+					<TouchableOpacity style={styles.button} onPress={()=>router.push('/profilegen')}>
 						<Text style={styles.text5}>
 							{"Next"}
 						</Text>
