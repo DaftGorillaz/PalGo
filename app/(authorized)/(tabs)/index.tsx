@@ -1,40 +1,31 @@
-import {useAuthSession} from "@/providers/AuthProvider";
-import {useState} from "react";
-import {View, Text, Button} from "react-native";
+import { StyleSheet, View, Text } from 'react-native';
+import PagerView from 'react-native-pager-view';
 
-export default function Index() {
-  const {signOut, token} = useAuthSession()
-  const [tokenInUi, setTokenInUi] = useState<null|string|undefined>(null)
-
-  const logout = () => {
-     signOut();
-  }
-
-  const callApi = () => {
-    setTokenInUi(token?.current);
-  }
-
+export default function MyPager() {
   return (
-    <View
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        flex: 1,
-        backgroundColor: '#FFFFFF'
-      }}
-    >
-      <Text>Home</Text>
-      <Button title={"Logout"} onPress={logout}/>
-      <View style={{
-        paddingTop: 20
-      }} />
-      <Text>Make an API call with the stored AUTH token</Text>
-      <Button title={"Call API"} onPress={callApi} />
-      {tokenInUi &&
-        <Text>{`Your API access token is ${tokenInUi}`}</Text>
-      }
+    <View style={styles.container}>
+      <PagerView style={styles.container} initialPage={0}>
+        <View style={styles.page} key="1">
+          <Text>First page</Text>
+          <Text>Swipe ➡️</Text>
+        </View>
+        <View style={styles.page} key="2">
+          <Text>Second page</Text>
+        </View>
+        <View style={styles.page} key="3">
+          <Text>Third page</Text>
+        </View>
+      </PagerView>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  page: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
