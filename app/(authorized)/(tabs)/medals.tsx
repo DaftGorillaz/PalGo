@@ -1,27 +1,15 @@
 import React from "react";
 import { SafeAreaView, View, ScrollView, Text, Image, TouchableOpacity, StyleSheet, } from "react-native";
-export default (props) => {
+export default function Medals() {
 	return (
 		<SafeAreaView style={styles.container}>
 			<ScrollView  style={styles.scrollView}>
-				<View style={styles.row}>
-					<Text style={styles.text}>
-						{"9:41 AM"}
-					</Text>
-					<View style={styles.view}>
-						<Image
-							source = {{uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/26222540-21e6-4433-b317-4f3a6cf38b57"}} 
-							resizeMode = {"stretch"}
-							style={styles.image}
-						/>
-					</View>
-				</View>
 				<View style={styles.column}>
 					<View style={styles.column2}>
 						<View style={styles.column3}>
 							<View style={styles.view2}>
 								<Image
-									source = {{uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/1d69a14c-192f-4124-b866-addf6b9a7de6"}} 
+									source = {{uri: "https://placecats.com/300/200"}} 
 									resizeMode = {"stretch"}
 									style={styles.image2}
 								/>
@@ -87,11 +75,6 @@ export default (props) => {
 							</TouchableOpacity>
 						</View>
 					</View>
-					<Image
-						source = {{uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/d60bc699-191f-420f-bf4f-888f2627bae6"}} 
-						resizeMode = {"stretch"}
-						style={styles.absoluteImage}
-					/>
 				</View>
 			</ScrollView>
 		</SafeAreaView>

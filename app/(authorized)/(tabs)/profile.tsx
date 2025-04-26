@@ -8,8 +8,8 @@ export default (props) => {
 					<View style={styles.column2}>
 						<View style={styles.view2}>
 							<Image
-								source = {{uri: "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/55e2fcbe-b175-4f02-b29d-f96285432bec"}} 
-								resizeMode = {"stretch"}
+								source = {{uri: "https://placecats.com/300/200"}} 
+								resizeMode = {"cover"}
 								style={styles.image2}
 							/>
 						</View>
