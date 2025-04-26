@@ -20,6 +20,15 @@ export default function TabLayout() {
         }}
     >  
       <Tabs.Screen
+        name="medals"
+        options={{
+          title: 'Medals',
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons name={focused ? 'medal-sharp' : 'medal-outline'} color={color} size={24}/>
+          ),
+        }}
+      />
+      <Tabs.Screen
         name="map"
         options={{
           title: 'Find',
